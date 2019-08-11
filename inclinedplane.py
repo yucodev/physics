@@ -68,7 +68,7 @@ def initial():
     time.sleep(1)
     print(Cyan + 'Press "S" to start calculator, "H" for help or information, "M" to return to the main menu or "E" to exit the program. Then press enter.' + Color_Off)
 
-    return
+    # return
 
 def home():
     # print(Cyan + 'Press "S" to start calculator, "H" for help or information, "M" to return to the main menu or "E" to exit the program. Then press enter.' + Color_Off)
@@ -80,12 +80,12 @@ def home():
         def ObjectMass():
             mNoEval = input().lower()
             try:
-                m = eval(mNoEval)
+                ObjectMass.m = eval(mNoEval)
             except NameError:
                 print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)
                 time.sleep(0.01)
                 ObjectMass()
-            return m
+            # return m
 
         print(Cyan + 'Insert object mass (kg): ' + Color_Off)
         ObjectMass()
@@ -95,12 +95,12 @@ def home():
         def ObjectGravity():
             gNoEval = input().lower()
             try:
-                g = eval(gNoEval)
+                ObjectMass.g = eval(gNoEval)
             except NameError:
                 print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)
                 time.sleep(0.01)
                 ObjectGravity()
-            return g
+            # return g
 
         print(Cyan + 'Insert gravity (m/s²): ' + Color_Off)
         ObjectGravity()
@@ -110,12 +110,12 @@ def home():
         def ObjectInclination():
             ÂNoEval = input().lower()
             try:
-                Â = eval(ÂNoEval)
+                ObjectMass.Â = eval(ÂNoEval)
             except NameError:
                 print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)
                 time.sleep(0.01)
                 ObjectInclination()
-            return Â
+            # return Â
 
 
         print(Cyan + 'Insert plane\'s inclination angel (DEG): ' + Color_Off)
@@ -126,16 +126,20 @@ def home():
         def ObjectFrictionCoef():
             µNoEval = input().lower()
             try:
-                µ = eval(µNoEval)
+                ObjectMass.µ = eval(µNoEval)
             except NameError:
                 print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)
                 time.sleep(0.01)
                 ObjectFrictionCoef()
-            return µ
+            # return µ
 
         print(Cyan + 'Insert coefficient of friction: ' + Color_Off)
         ObjectFrictionCoef()
 
+        m = ObjectMass.m
+        g = ObjectMass.g
+        Â = ObjectMass.Â
+        µ = ObjectMass.µ
 
 
         # CALCULATIONS AND FORMULES #
@@ -168,7 +172,7 @@ def home():
         print(' ')
         print(Cyan + 'Press "S" to start calculator, "H" for help or information, "M" to return to the main menu or "E" to exit the program. Then press enter.' + Color_Off)
         home()
-        return
+        # return
 
 
     elif home.varinput in ['H', 'h', 'HELP', 'help', 'INFO', 'info', 'I', 'i']:
@@ -184,7 +188,7 @@ def home():
         print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)
         home()
 
-    return
+    # return
 
 # while True:
 #     initial()
