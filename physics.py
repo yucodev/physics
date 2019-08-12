@@ -30,7 +30,7 @@ def info():
     print('- moon_mass')
     print('- neptune_mass')
     print('- saturn_mass')
-    # print('- sun_mass')
+    print('- sun_mass')
     print('- uranus_mass')
     print('- venus_mass')
     print('- venus_sun_distance')
@@ -44,18 +44,21 @@ def info():
 
 
 def input_loop():
-    ProgramNumber = input()
+    ProgramRun = input()
 
-    if ProgramNumber in ['E', 'e', 'EXIT', 'exit']:
+    if ProgramRun in ['E', 'e', 'EXIT', 'exit']:
         print(Red + 'Leaving program' + Color_Off)
 
-    elif ProgramNumber == str(0):
+    elif ProgramRun in ['D', 'd', 'DATA', 'data']:
+        import datachecker
+
+    elif ProgramRun == str(0):
         info()
 
-    elif ProgramNumber == str(1):
+    elif ProgramRun == str(1):
         import inclinedplane
 
-    elif ProgramNumber == str(2):
+    elif ProgramRun == str(2):
         import gravitation
 
     else:
@@ -70,6 +73,7 @@ def program_start():
     print(Yellow + 'Which program would you like to start? You should read the INFO before starting the program for the first time.')
     print(' ' + Color_Off)
     print(Red + '[E] EXIT' + Color_Off)
+    print(Green + '[D] Data checker' + Color_Off)
     print(Green + '[0] INFO' + Color_Off)
     print(Yellow + '[1] Inclined plane' + Color_Off)
     print(Yellow + '[2] Gravitation' + Color_Off)
