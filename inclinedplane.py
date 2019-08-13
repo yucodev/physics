@@ -67,8 +67,7 @@ def initial():
     print(' ' + Color_Off)
     time.sleep(1)
     print(Cyan + 'Press "S" to start calculator, "H" for help or information, "M" to return to the main menu or "E" to exit the program. Then press enter.' + Color_Off)
-
-    # return
+    return
 
 def home():
     # print(Cyan + 'Press "S" to start calculator, "H" for help or information, "M" to return to the main menu or "E" to exit the program. Then press enter.' + Color_Off)
@@ -85,7 +84,7 @@ def home():
                 print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)
                 time.sleep(0.01)
                 ObjectMass()
-            # return m
+            return
 
         print(Cyan + 'Insert object mass (kg): ' + Color_Off)
         ObjectMass()
@@ -100,7 +99,7 @@ def home():
                 print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)
                 time.sleep(0.01)
                 ObjectGravity()
-            # return g
+            return
 
         print(Cyan + 'Insert gravity (m/s²): ' + Color_Off)
         ObjectGravity()
@@ -115,8 +114,7 @@ def home():
                 print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)
                 time.sleep(0.01)
                 ObjectInclination()
-            # return Â
-
+            return
 
         print(Cyan + 'Insert plane\'s inclination angel (DEG): ' + Color_Off)
         ObjectInclination()
@@ -131,7 +129,7 @@ def home():
                 print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)
                 time.sleep(0.01)
                 ObjectFrictionCoef()
-            # return µ
+            return
 
         print(Cyan + 'Insert coefficient of friction: ' + Color_Off)
         ObjectFrictionCoef()
@@ -188,7 +186,7 @@ def home():
         print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)
         home()
 
-    # return
+    return
 
 # while True:
 #     initial()

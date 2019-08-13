@@ -34,8 +34,6 @@ def info():
     print('- uranus_mass')
     print('- venus_mass')
     print('- venus_sun_distance')
-
-
     input(Green + "Press any key to continue..." + Color_Off)
     clear()
     time.sleep(0.01)
