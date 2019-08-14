@@ -5,6 +5,7 @@ import time
 import subprocess
 import platform
 
+
 def clear():
     subprocess.Popen("cls" if platform.system() == "Windows" else "clear", shell=True)
 
@@ -67,7 +68,7 @@ def initial():
     print(' ' + Color_Off)
     time.sleep(1)
     print(Cyan + 'Press "S" to start calculator, "H" for help or information, "M" to return to the main menu or "E" to exit the program. Then press enter.' + Color_Off)
-    return
+    # return
 
 def home():
     # print(Cyan + 'Press "S" to start calculator, "H" for help or information, "M" to return to the main menu or "E" to exit the program. Then press enter.' + Color_Off)
@@ -84,7 +85,7 @@ def home():
                 print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)
                 time.sleep(0.01)
                 ObjectMass()
-            return
+            # return
 
         print(Cyan + 'Insert object mass (kg): ' + Color_Off)
         ObjectMass()
@@ -99,7 +100,7 @@ def home():
                 print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)
                 time.sleep(0.01)
                 ObjectGravity()
-            return
+            # return
 
         print(Cyan + 'Insert gravity (m/s²): ' + Color_Off)
         ObjectGravity()
@@ -114,7 +115,7 @@ def home():
                 print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)
                 time.sleep(0.01)
                 ObjectInclination()
-            return
+            # return
 
         print(Cyan + 'Insert plane\'s inclination angel (DEG): ' + Color_Off)
         ObjectInclination()
@@ -129,7 +130,7 @@ def home():
                 print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)
                 time.sleep(0.01)
                 ObjectFrictionCoef()
-            return
+            # return
 
         print(Cyan + 'Insert coefficient of friction: ' + Color_Off)
         ObjectFrictionCoef()
@@ -170,7 +171,7 @@ def home():
         print(' ')
         print(Cyan + 'Press "S" to start calculator, "H" for help or information, "M" to return to the main menu or "E" to exit the program. Then press enter.' + Color_Off)
         home()
-        # return
+        # # return
 
 
     elif home.varinput in ['H', 'h', 'HELP', 'help', 'INFO', 'info', 'I', 'i']:
@@ -186,7 +187,7 @@ def home():
         print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)
         home()
 
-    return
+    # return
 
 # while True:
 #     initial()

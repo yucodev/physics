@@ -5,6 +5,7 @@ import time
 import subprocess
 import platform
 
+
 def clear():
     subprocess.Popen("cls" if platform.system() == "Windows" else "clear", shell=True)
 
@@ -58,7 +59,7 @@ def initial():
 
 
 def home():
-    print(Cyan + 'Press "S" to start calculator, "H" for help or information, "M" to return to the main menu or "E" to exit the program. Then press enter.' + Color_Off)
+    print(Cyan + 'Press "S" to start calculator, "H" for help or information, "M" to # return to the main menu or "E" to exit the program. Then press enter.' + Color_Off)
     home.varinput = input()
 
     if home.varinput in ['S', 's', 'START', 'start']:
@@ -113,7 +114,7 @@ def home():
         print(Red + 'Error, type a valid input' + Color_Off)
         home()
 
-    return
+    # return
 
 initial()
 home()
