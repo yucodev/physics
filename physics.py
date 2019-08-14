@@ -87,3 +87,6 @@ print(Yellow + 'WELCOME TO YUCODE PHYSICS CALCULATOR!')
 time.sleep(1)
 
 program_start()
+
+# if __name__ == '__main__':
+#     main()
