@@ -9,18 +9,22 @@ import importlib
 
 def clear():
     subprocess.Popen("cls" if platform.system() == "Windows" else "clear", shell=True)
+    return
 
 clear()
+
 
 def home():
     time.sleep(0.01)
     print(Green + 'Type a variable to check its value. Type "M" to return to the main menu:' + Color_Off)
     return
+
 home()
+
 
 def input_loop():
     DataCheckerInput = input()
-    if DataCheckerInput in ['G']:
+    if DataCheckerInput in ['G', 'g']:
         DataCheckerInputFinal = DataCheckerInput.upper()
     else:
         DataCheckerInputFinal = DataCheckerInput.lower()
@@ -29,12 +33,9 @@ def input_loop():
         return
     try:
         print(Cyan + str(eval(DataCheckerInputFinal)) + Color_Off)
-        if NameError:
-            input_loop()
-        else:
-            home()
+        input_loop()
     except NameError:
-        print(Red + 'ERROR: Variable not found' + Color_Off)
+        print(Red + 'ERROR: Variable not, found' + Color_Off)
         input_loop()
     return
 
