@@ -7,7 +7,6 @@ import platform
 
 def clear():
     subprocess.Popen("cls" if platform.system() == "Windows" else "clear", shell=True)
-    # return
 
 def info():
     clear()
@@ -39,7 +38,6 @@ def info():
     clear()
     time.sleep(0.01)
     program_start()
-    # return
 
 
 def input_loop():
@@ -49,13 +47,12 @@ def input_loop():
         print(Red + 'Leaving program' + Color_Off)
 
     elif ProgramRun in ['D', 'd', 'DATA', 'data']:
-        import datachecker
-
+        from datachecker import home, input_loop
     elif ProgramRun == str(0):
         info()
 
     elif ProgramRun == str(1):
-        import inclinedplane
+        from inclinedplane import initial, home
 
     elif ProgramRun == str(2):
         import gravitation
@@ -63,8 +60,6 @@ def input_loop():
     else:
         print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)
         input_loop()
-
-    # return
 
 
 def program_start():
@@ -78,7 +73,6 @@ def program_start():
     print(Yellow + '[2] Gravitation' + Color_Off)
     print(' ')
     input_loop()
-    # return
 
 # time.sleep(1)
 clear()
