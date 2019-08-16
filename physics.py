@@ -47,12 +47,12 @@ def input_loop():
         print(Red + 'Leaving program' + Color_Off)
 
     elif ProgramRun in ['D', 'd', 'DATA', 'data']:
-        from datachecker import home, input_loop
+        import datachecker
     elif ProgramRun == str(0):
         info()
 
     elif ProgramRun == str(1):
-        from inclinedplane import initial, home
+        import inclinedplane
 
     elif ProgramRun == str(2):
         import gravitation
