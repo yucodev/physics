@@ -1,4 +1,4 @@
-from data import *
+from datafiles.data import *
 import math
 import random
 import time
@@ -47,15 +47,15 @@ def input_loop():
         print(Red + 'Leaving program' + Color_Off)
 
     elif ProgramRun in ['D', 'd', 'DATA', 'data']:
-        import datachecker
+        from datafiles import datachecker
     elif ProgramRun == str(0):
         info()
 
     elif ProgramRun == str(1):
-        import inclinedplane
+        from programs import inclinedplane
 
     elif ProgramRun == str(2):
-        import gravitation
+        from programs import gravitation
 
     else:
         print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)
