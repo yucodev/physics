@@ -22,7 +22,7 @@ def input_loop():
         time.sleep(0.01)
         import physics
     try:
-        print(Cyan + str(eval(DataCheckerInputFinal)) + Color_Off)
+        print(Cyan + str(eval(DataCheckerInputFinal + DataCheckerInputFinal.unit)) + Color_Off)
         input_loop()
     except NameError:
         print(Red + 'ERROR: Variable not found' + Color_Off)
