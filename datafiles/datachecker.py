@@ -4,7 +4,7 @@ import random
 import time
 import subprocess
 import platform
-# import importlib
+import importlib
 
 
 def clear():

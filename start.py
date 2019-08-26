@@ -47,15 +47,16 @@ def input_loop():
         print(Red + 'Leaving program' + Color_Off)
 
     elif ProgramRun in ['D', 'd', 'DATA', 'data']:
-        from datafiles import datachecker
+        import datafiles.datachecker
+
     elif ProgramRun == str(0):
         info()
 
     elif ProgramRun == str(1):
-        from programs import inclinedplane
+        import programs.inclinedplane
 
     elif ProgramRun == str(2):
-        from programs import gravitation
+        import programs.gravitation
 
     else:
         print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)
