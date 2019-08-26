@@ -102,13 +102,14 @@ def home():
         home()
 
     elif home.varinput in ['H', 'h', 'HELP', 'help', 'INFO', 'info', 'I', 'i']:
-        from physics import info
+        from start import info
 
     elif home.varinput in ['E', 'e', 'EXIT', 'exit']:
         print('Leaving program')
 
     elif home.varinput in ['M', 'm', 'MENU', 'menu']:
-        import physics
+        import start
+        # from start import *
 
     else:
         print(Red + 'Error, type a valid input' + Color_Off)

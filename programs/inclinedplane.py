@@ -168,13 +168,13 @@ def home():
         home()
 
     elif home.varinput in ['H', 'h', 'HELP', 'help', 'INFO', 'info', 'I', 'i']:
-        from physics import info
+        from start import info
 
     elif home.varinput in ['E', 'e', 'EXIT', 'exit']:
         print('Leaving program')
 
     elif home.varinput in ['M', 'm', 'MENU', 'menu']:
-        import physics
+        import start
 
     else:
         print(Red + 'ERROR: Unexpected input! Please try again:' + Color_Off)

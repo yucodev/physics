@@ -1,6 +1,9 @@
 import math
 import random
 
+def clear():
+    subprocess.Popen("cls" if platform.system() == "Windows" else "clear", shell=True)
+
 # CONSOLE COLORS #
 
 # Regular colors
@@ -39,56 +42,56 @@ UWhite="\033[4;37m"       # White
 average_person_mass = 70
 # average_person_mass.unit = ' kg'
 
-# earth_gravity = 9.80665
+earth_gravity = 9.80665
 # earth_gravity.unit = ' m/s²'
-#
-# earth_mass = 5.97e+24
+
+earth_mass = 5.97e+24
 # earth_mass.unit = ' kg'
-#
-# earth_moon_distance = 3.844e+8
+
+earth_moon_distance = 3.844e+8
 # earth_moon_distance.unit = ' m'
-#
-# earth_radius = 6371000
+
+earth_radius = 6371000
 # earth_radius.unit = ' m'
-#
-# earth_sun_distance = 1.496e+11
+
+earth_sun_distance = 1.496e+11
 # earth_sun_distance.unit = ' m'
-#
-# G = 6.67e-11
+
+G = 6.67e-11
 # G.unit = ' N*(m/s)²'
-#
-# jupiter_mass = 1.898e+27
+
+jupiter_mass = 1.898e+27
 # jupiter_mass.unit = ' kg'
-#
-# mars_mass = 6.39e+23
+
+mars_mass = 6.39e+23
 # mars_mass.unit = ' kg'
-#
-# mars_sun_distance = 227.9e+6
+
+mars_sun_distance = 227.9e+6
 # mars_sun_distance.unit = ' m'
-#
-# mercury_mass = 3.285e+23
+
+mercury_mass = 3.285e+23
 # mercury_mass.unit = ' kg'
-#
-# mercury_sun_distance = 57.91e+6
+
+mercury_sun_distance = 57.91e+6
 # jupiter_mass.unit = ' kg'
-#
-# moon_mass = 7.34e+22
+
+moon_mass = 7.34e+22
 # mars_mass.unit = ' kg'
-#
-# neptune_mass = 1.024e+26
+
+neptune_mass = 1.024e+26
 # mars_sun_distance.unit = ' m'
-#
-# saturn_mass = 5.683e+26
+
+saturn_mass = 5.683e+26
 # mercury_mass.unit = ' kg'
-#
-# sun_mass = 1.989e+30
+
+sun_mass = 1.989e+30
 # sun_mass.unit = ' kg'
-#
-# uranus_mass = 8.681e+25
+
+uranus_mass = 8.681e+25
 # uranus_mass.unit = ' kg'
-#
-# venus_mass = 4.867e+24
+
+venus_mass = 4.867e+24
 # venus_mass.unit = ' kg'
-#
-# venus_sun_distance = 108.2e+6
+
+venus_sun_distance = 108.2e+6
 # venus_sun_distance .unit = ' m'

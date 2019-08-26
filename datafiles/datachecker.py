@@ -20,9 +20,9 @@ def input_loop():
         DataCheckerInputFinal = DataCheckerInput.lower()
     if DataCheckerInputFinal in ['M', 'm', 'MENU', 'menu']:
         time.sleep(0.01)
-        from programs import physics
+        import start
     try:
-        print(Cyan + str(eval(DataCheckerInputFinal + DataCheckerInputFinal.unit)) + Color_Off)
+        print(Cyan + str(eval(DataCheckerInputFinal + 'UNIT_HERE')) + Color_Off)
         input_loop()
     except NameError:
         print(Red + 'ERROR: Variable not found' + Color_Off)
