@@ -5,6 +5,8 @@ import time
 import subprocess
 import platform
 
+# Execute This Script With Python 3 
+
 
 def clear():
     subprocess.Popen("cls" if platform.system() == "Windows" else "clear", shell=True)
