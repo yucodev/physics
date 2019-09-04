@@ -5,6 +5,8 @@ import time
 import subprocess
 import platform
 
+# Pogram Menu Executer (Execute this Script in Python 3)
+
 def clear():
     subprocess.Popen("cls" if platform.system() == "Windows" else "clear", shell=True)
 
