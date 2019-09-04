@@ -5,7 +5,7 @@ import time
 import subprocess
 import platform
 
-# Execute This Script With Python 3 
+# Gravitation Calculator Script (Execute This Script in Python 3)
 
 
 def clear():
