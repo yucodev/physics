@@ -5,6 +5,7 @@ import time
 import subprocess
 import platform
 
+# Inclined Plane Script (Execute This Script in Python 3)
 
 def clear():
     subprocess.Popen("cls" if platform.system() == "Windows" else "clear", shell=True)
