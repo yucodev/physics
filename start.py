@@ -48,6 +48,7 @@ def input_loop():
 
     elif ProgramRun in ['D', 'd', 'DATA', 'data']:
         import datafiles.datachecker
+        return
 
     elif ProgramRun == str(0):
         info()
